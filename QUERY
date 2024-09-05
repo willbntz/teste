@@ -1,0 +1,39 @@
+############summarize de um campo em um campo específico##############
+select
+	baires,
+	count(baires)
+from 
+	 aig.teste_sinasc2024
+where
+	baires in ('PRACA DA BANDEIRA')
+group by
+	baires
+
+
+######################Summarize de duas colunas######################
+
+select
+	baires,
+	endres,
+	count(*) as total
+from 
+	 aig.teste_sinasc2024
+
+group by
+	baires,
+	endres
+
+###################ATUALIZAR UM CAMPO EXISTE ###################
+
+update
+	aig.teste_sinasc2024
+set
+	f_obsgeo = 'FLUMINENSE'
+where
+	numerodn = '99999999'
+	
+	
+############# CRIAR COLUNA ##################
+	
+ALTER TABLE aig.teste_sinasc2024
+ADD ##NOMEDOCAMPO## VARCHAR(20);
