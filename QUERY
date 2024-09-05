@@ -3,7 +3,7 @@ select
 	baires,
 	count(baires)
 from 
-	 aig.teste_sinasc2024
+	 xxxxxxxxxxxxx
 where
 	baires in ('PRACA DA BANDEIRA')
 group by
@@ -17,7 +17,7 @@ select
 	endres,
 	count(*) as total
 from 
-	 aig.teste_sinasc2024
+	 xxxxxxxxxxxxxxxxxx
 
 group by
 	baires,
@@ -26,14 +26,14 @@ group by
 ###################ATUALIZAR UM CAMPO EXISTE ###################
 
 update
-	aig.teste_sinasc2024
+	xxxxxxxxxxxxxxx
 set
-	f_obsgeo = 'FLUMINENSE'
+	xxxxxxxxx = 'FLUMINENSE'
 where
-	numerodn = '99999999'
+	xxxxxxxxxxx = '99999999'
 	
 	
 ############# CRIAR COLUNA ##################
 	
-ALTER TABLE aig.teste_sinasc2024
+ALTER TABLE xxxxxxxxxxxxxxxxxxx
 ADD ##NOMEDOCAMPO## VARCHAR(20);
